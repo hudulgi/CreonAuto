@@ -12,8 +12,8 @@ icon.click_input(button="right")  # 트레이 아이콘 마우스 우 클릭
 
 # d['컨텍스트Menu'].dump_tree()
 icon2 = d['컨텍스트Menu'].child_window(title="복수계좌 사인온 변경", control_type="MenuItem")
-icon2.click_input(button='left')  # 사인온 버튼 클릭
+icon2.click_input(button='left')  # 복수계좌 사인온 변경 메뉴 클릭
 
 app = Application(backend="uia").connect(path="C:\\DAISHIN\\CYBOSPLUS\\CpStart.exe")
 diag = app.window(title="복수계좌 사인온 변경")
-diag['사인온'].click()
+diag['사인온'].click()  # 사인온 버튼 클릭
